@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Portofolio Malinda</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <header class="main-header p-[7px]">
+        <!-- logo -->
+        <div class="logo"></div>
+
+        <!-- Menu -->
+        <nav class="flex bg-purple-500">
+            <a class="border rounded p-2" href="#home">Home</a>
+            <a class="border rounded p-2" href="#our-profile">Our Profile</a>
+            <a class="border rounded p-2" href="#portofolio">Portofolio</a>
+            <a class="border rounded p-2" href="#Message-us">Message Us</a>
+        </nav>
+    </header>
+    
+    <hr>
+
+    <main>
+        <!-- Home -->
+         <section id="home" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome">Selamat datang di website kami</h2>
+            <p class="mt-2"> We are glad to have you here.</p>
+        </section>
+        
+        <hr/>
+        
+        <!-- Our Profile -->
+         <section id="our-profile" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Tentang website ini</h2>
+            <p class="mt-2">Website ini tentang</p>
+        </section>
+        
+        <hr/>
+        
+        <!-- Portofolio -->
+         <section id="portofolio" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Portofolio</h2>
+            <p class="mt-2"> Portofolio</p>
+        </section>
+       
+        <hr/>
+
+        <!-- Message Us -->
+         <section id="message-us" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2 underline"> Kirim pesan</p>
+            </header>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Nama</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email</label>
+                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="pesan">Pesan</label>
+                    <textarea class="w-full p-2 border rounded" id="message" name="pesan" rows="6" required></textarea>
+                </div>
+                <button class="px-4 py-2 bg-purple-500 text-white rounded" type="submit">Kirim</button>           
+            </form>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="text-center bg-purple-500 p-4">
+            &copy; 2026 Linda Company. All rights reserved.    
+        </div>
+    </footer>
+
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
