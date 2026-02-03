@@ -21,7 +21,7 @@ function submitMessage() {
 document.getElementById("messageForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const fields = ["name", "email", "message"];
+    const fields = ["name", "email", "pesan"];
     let valid = true;
 
     fields.forEach(contact => {
@@ -42,8 +42,21 @@ document.getElementById("messageForm").addEventListener("submit", function(e) {
         return;
     }
 
-    alert("Pesan berhasil dikirim 🎉");
-    this.submit();
+    // ✨ tampilkan hasil ke samping
+        document.getElementById("resultName").innerText =
+            document.getElementById("name").value;
+
+        document.getElementById("resultEmail").innerText =
+            document.getElementById("email").value;
+
+        document.getElementById("resultPesan").innerText =
+            document.getElementById("pesan").value;
+
+        // munculkan box hasil
+        document.getElementById("resultBox").classList.remove("hidden");
+
+    // alert("Pesan berhasil dikirim 🎉");
+    // this.submit();
 });
 
 }
