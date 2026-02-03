@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body class="scroll-smooth">
     <header class="main-header p-[7px]">
         <!-- logo -->
         <div class="logo"></div>
@@ -24,7 +24,7 @@
             <a class="border rounded p-2" href="#home">Home</a>
             <a class="border rounded p-2" href="#our-profile">Our Profile</a>
             <a class="border rounded p-2" href="#portofolio">Portofolio</a>
-            <a class="border rounded p-2" href="#Message-us">Message Us</a>
+            <a class="border rounded p-2" href="#message-us">Message Us</a>
         </nav>
     </header>
     
@@ -32,37 +32,45 @@
 
     <main>
         <!-- Home -->
-         <section id="home" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold" id="welcome">Selamat datang di website kami</h2>
-            <p class="mt-2"> We are glad to have you here.</p>
+         <section id="home" class="min-h-[500px] flex items-center justify-center text-center">
+            <div class="max-w-3xl px-4 md:px-8">
+                <h2 class="text-xl font-bold" id="welcome">Selamat datang di website kami</h2>
+                <p class="mt-2"> We are glad to have you here.</p>
+            </div> 
         </section>
         
         <hr/>
         
         <!-- Our Profile -->
-         <section id="our-profile" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">Tentang website ini</h2>
-            <p class="mt-2">Website ini tentang sebuah tempat instruktur poundfit</p>
+         <section id="our-profile" class="min-h-[500px] flex items-center justify-center text-center">
+            <div class="max-w-3xl px-4 md:px-8">
+                <h2 class="text-xl font-bold">Tentang website ini</h2>
+                <p class="mt-2">Kami adalah komunitas Poundfit di Kabupaten Situbondo yang menghadirkan olahraga penuh energi melalui perpaduan musik, kardio, dan latihan kekuatan. Setiap kelas dipandu oleh instruktur Pound Pro bersertifikat dengan gerakan yang aman, efektif, dan menyenangkan. Kelas tersedia sesuai jadwal yang telah ditentukan, menciptakan ruang untuk bergerak, berkeringat, dan melepas stres dalam suasana yang positif dan suportif. Bersama kami, rasakan sensasi olahraga yang bukan sekadar latihan, tetapi juga pengalaman penuh semangat.</p>
+            </div>
         </section>
         
         <hr/>
         
         <!-- Portofolio -->
-         <section id="portofolio" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">Portofolio</h2>
-            <p class="mt-2"> Portofolio</p>
+         <section id="portofolio" class="min-h-[500px] flex items-center justify-center text-center">
+            <div class="max-w-3xl px-4 md:px-8">
+                <h2 class="text-xl font-bold">Portofolio</h2>
+                <p class="mt-2"> Portofolio</p>
+            </div>
         </section>
        
         <hr/>
 
         <!-- Message Us -->
-         <section id="message-us" class="min-h-[500px] mx-8">
+         <section id="message-us" class="min-h-[500px] flex flex-col items-start justify-center px-4">
             <header>
-                <h2 class="text-xl font-bold">Message Us</h2>
-                <p class="mt-2 underline"> Kirim pesan</p>
+                <div class="max-w-3xl px-4 md:px-8">
+                    <h2 class="text-xl font-bold" id="contact">Message Us</h2>
+                    <p class="mt-2 underline">Silakan isi form berikut untuk bertanya tentang kami</p>
+                </div>
             </header>
-
-            <form>
+            <br>
+            <form class="w-full max-w-md" id="messageForm">
                 <div class="mb-4">
                     <label class="block mb-2" for="name">Nama</label>
                     <input class="w-full p-2 border rounded" type="text" id="name" name="name" required>
@@ -73,18 +81,21 @@
                 </div>
                 <div class="mb-4">
                     <label class="block mb-2" for="pesan">Pesan</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="pesan" rows="6" required></textarea>
+                    <textarea class="w-full p-2 border rounded" id="pesan" name="pesan" rows="6" required></textarea>
                 </div>
                 <button class="px-4 py-2 bg-purple-500 text-white rounded" type="submit">Kirim</button>           
+                
             </form>
             
         </section>
     </main>
 
-    <footer>
-        <div class="text-center bg-purple-500 p-4">
+    <footer class="mt-16">
+        <section>
+            <div class="text-center bg-purple-500 p-4">
             &copy; 2026 Linda Company. All rights reserved.    
         </div>
+        </section>
     </footer>
 
     <!-- Javascript External -->
