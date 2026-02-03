@@ -32,34 +32,74 @@
 
     <main>
         <!-- Home -->
-         <section id="home" class="min-h-[500px] flex items-center justify-center text-center">
-            <div class="max-w-3xl px-4 md:px-8">
+         <section id="home" class="full-section section-divider section-spacing min-h-[500px] flex items-center justify-center text-center relative isolate overflow-hidden
+         bg-gradient-to-br from-purple-50 via-white to-purple-100">
+            <div class="max-w-3xl px-4 md:px-8 relative z-10">
                 <h2 class="text-xl font-bold" id="welcome">Selamat datang di website kami</h2>
                 <p class="mt-2"> We are glad to have you here.</p>
             </div> 
         </section>
         
-        <hr/>
-        
         <!-- Our Profile -->
-         <section id="our-profile" class="min-h-[500px] flex items-center justify-center text-center">
+         <section id="our-profile" class="full-section section-divider section-spacing min-h-[500px] flex items-center justify-center text-center">
             <div class="max-w-3xl px-4 md:px-8">
                 <h2 class="text-xl font-bold">Tentang website ini</h2>
                 <p class="mt-2">Kami adalah komunitas Poundfit di Kabupaten Situbondo yang menghadirkan olahraga penuh energi melalui perpaduan musik, kardio, dan latihan kekuatan. Setiap kelas dipandu oleh instruktur Pound Pro bersertifikat dengan gerakan yang aman, efektif, dan menyenangkan. Kelas tersedia sesuai jadwal yang telah ditentukan, menciptakan ruang untuk bergerak, berkeringat, dan melepas stres dalam suasana yang positif dan suportif. Bersama kami, rasakan sensasi olahraga yang bukan sekadar latihan, tetapi juga pengalaman penuh semangat.</p>
             </div>
         </section>
         
-        <hr/>
-        
         <!-- Portofolio -->
-         <section id="portofolio" class="min-h-[500px] flex items-center justify-center text-center">
-            <div class="max-w-3xl px-4 md:px-8">
-                <h2 class="text-xl font-bold">Portofolio</h2>
-                <p class="mt-2"> Portofolio</p>
+        <section id="portofolio" class="full-section section-divider section-spacing min-h-[500px] px-4 py-16 scroll-mt-24">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-xl font-bold mb-2">Portofolio Kelas Poundfit</h2>
+                <p class="mb-10">
+                    Beberapa kelas Poundfit yang kami selenggarakan di Kabupaten Situbondo
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="border rounded-lg p-6 shadow hover:shadow-lg transition reveal">
+                        <h3 class="font-bold text-lg mb-2">Poundfit Beginner Class</h3>
+                        <p class="text-sm mb-4">
+                            Kelas untuk pemula dengan gerakan dasar yang mudah diikuti dan menyenangkan.
+                        </p>
+                        <ul class="text-sm text-left space-y-1">
+                            <li><strong>Level:</strong> Pemula</li>
+                            <li><strong>Hari:</strong> Senin & Rabu</li>
+                            <li><strong>Lokasi:</strong> Situbondo</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="border rounded-lg p-6 shadow hover:shadow-lg transition reveal">
+                        <h3 class="font-bold text-lg mb-2">Poundfit Women Class</h3>
+                        <p class="text-sm mb-4">
+                            Kelas khusus wanita untuk membangun energi, kekuatan, dan kepercayaan diri.
+                        </p>
+                        <ul class="text-sm text-left space-y-1">
+                            <li><strong>Level:</strong> All Level</li>
+                            <li><strong>Hari:</strong> Selasa & Kamis</li>
+                            <li><strong>Lokasi:</strong> Situbondo</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="border rounded-lg p-6 shadow hover:shadow-lg transition reveal">
+                        <h3 class="font-bold text-lg mb-2">Community Poundfit</h3>
+                        <p class="text-sm mb-4">
+                            Kelas komunitas dengan suasana seru, enerjik, dan penuh kebersamaan.
+                        </p>
+                        <ul class="text-sm text-left space-y-1">
+                            <li><strong>Level:</strong> All Level</li>
+                            <li><strong>Hari:</strong> Sabtu</li>
+                            <li><strong>Lokasi:</strong> Outdoor Situbondo</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </section>
-       
-        <hr/>
 
         <!-- Message Us -->
          <section id="message-us" class="min-h-[500px] flex flex-col items-start justify-center px-4">

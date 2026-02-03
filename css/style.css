@@ -7,9 +7,65 @@
     background-size: cover;
 }
 
-.main-header{
+.main-header {
     display: flex;
-    align-content: space-around;
     justify-content: space-between;
     align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    background-color: white;
+    padding: 8px 16px;
+}
+
+
+/* animasi reveal saat scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease;
+}
+
+.section-divider {
+    position: relative;
+}
+
+.section-divider::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 1.5px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(168, 85, 247, 0.5), /* ungu Poundfit */
+        transparent
+    );
+}
+
+.full-section {
+    min-height: 100vh;          /* 1 layar penuh */
+    padding-top: clamp(4rem, 8vh, 6rem);
+    padding-bottom: clamp(4rem, 8vh, 6rem);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.section-spacing {
+    margin-bottom: clamp(3rem, 10vh, 6rem);
+}
+
+section:last-of-type::after {
+    display: none;
 }
